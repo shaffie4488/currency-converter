@@ -1,0 +1,116 @@
+/* 🌐 Global Styles */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background-attachment: fixed;
+}
+
+/* 🧭 Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    animation: fadeIn 0.8s ease;
+}
+
+/* ✨ Title */
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* 📝 Input Field */
+#amount {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#amount:focus {
+    outline: none;
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* 🌍 Dropdowns */
+select {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+select:focus {
+    outline: none;
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* 💱 Convert Button */
+.convert-btn {
+    margin-top: 15px;
+    width: 95%;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.convert-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.6);
+}
+
+.convert-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.5);
+}
+
+/* 🧾 Result Text */
+#result {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    min-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+/* ✨ Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
